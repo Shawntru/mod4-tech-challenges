@@ -15,41 +15,23 @@ const arrayMatrix = [
 snail(arrayMatrix) #=> [1, 2, 3, 6, 9, 8, 7, 4, 5]
 ```
 
-## Ruby Example
-```rb
-arrayMatrix = [
-  [1, 2, 3],
-  [4, 5, 6],
-  [7, 8, 9]
-];
-
-snail(arrayMatrix) #=> [1, 2, 3, 6, 9, 8, 7, 4, 5]
-```
-
-# Instructions
-
-1. Copy this markdown and paste in your own, private gist
-2. In your private gist, fill out the questions below
-4. Submit by the due time as instructed in Zoom
-
-Do not publish your code on a public repl.it or repo or other public means.
-
-## Rewrite the question in your own words:
-
-
 ## What assumptions will you make about this problem if you cannot ask any more clarifying questions? What are your reasons for making those assumptions?
 
+- The arrays will always be symmetrical, given n x n. 
+- The array elements will be defined
+- The arrays will all contain equal lengths
 
 ## What are your initial thoughts about this problem? (high level design, 2-3 sentences)
 
+Should be able to collect the length of the first array and determine the dimensions of the total array. We will store the number of passes through the array as well as a reduced array containing the output. If `n` is 3, for example, we will accumulate forward through the array at overall index 0. We will then acc the element at the last index position (n-1) for each array until we reach the array in the overall arrays last index position. Using the reverse() method, this array will then be acc. Process repeats in reverse. 
 
 ## How would you identify the elements of this problem?
 
-- [ ] Searching of Data
-- [ ] Sorting of Data
+- [X] Searching of Data
+- [X] Sorting of Data
 - [ ] Pattern Recognition
 - [ ] Build/Navigate a Grid
-- [ ] Math
+- [X] Math
 - [ ] Language API knowledge
 - [ ] Optimization
 
