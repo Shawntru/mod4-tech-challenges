@@ -76,6 +76,17 @@ const findPalindromes = () => {
 
   return interestingNums;
 }
+
+/*
+Results:
+[
+   209,  308,  407,  506,  605,
+   704,  803,  902, 1000, 1001,
+  1002, 1003, 1004, 1005, 1006,
+  1007, 1008, 1010, 1011, 1012,
+  1013, 1014, 1015, 1016, 1017
+]
+*/
 ```
 [Repl.it Link](https://repl.it/@bearishparrot/AverageLovingOpen64#index.js)
 ## What is the Big O complexity of your solution?
