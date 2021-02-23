@@ -65,7 +65,7 @@ const findPalindromes = () => {
   let currentNum = 0;
 
   const reverse = (number) => {
-    return parseInt(number.toString().split('').reverse().join(''), 10);
+    return parseInt(number.toString(10).split('').reverse().join(''), 10);
   }
 
   while (interestingNums.length !== 25) {
