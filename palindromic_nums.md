@@ -40,7 +40,7 @@ Break out into several steps:
 - Most likely a reduce(), starting with an initial empty array. then use array iterator methods split(), reverse(), join().
 
 ## Write out a few lines of initial pseudocode: (mid-level design, NOT REAL CODE)
-```JavaScript
+```
 Have: No input
 Want: Output a array (length == 25) of numbers whos reversed sum is a palindrome
 
