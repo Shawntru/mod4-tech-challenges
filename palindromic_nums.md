@@ -40,6 +40,7 @@ Break out into several steps:
 
 ## Write out a few lines of initial pseudocode: (mid-level design, NOT REAL CODE)
 ```JavaScript
+/*
 Have: No input
 Want: Output a array (length == 25) of numbers whos reversed sum is a palindrome
 
@@ -52,6 +53,7 @@ Declare sum variable as currentNum + reverseNum,
 If the sum <= 1000 then return and increment currentNum by 1. 
 If sum === reversed sum using the reversing function, 
   push the number into array of interesting numbers
+*/
 ```
 
 ## Write out any implementation code OR link to repl
