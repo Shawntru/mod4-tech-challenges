@@ -13,21 +13,16 @@ Bonus points if you can do this without converting numbers to strings/arrays.
 
 Limit your online searches to core language documentation only.
 
-# Instructions
-
-1. Copy this markdown and paste in your own, private gist
-2. In your private gist, fill out the questions below
-4. Submit by the due time as instructed in Zoom
-
-
-## Rewrite the question in your own words:
-
-
 ## What assumptions will you make about this problem if you cannot ask any more clarifying questions? What are your reasons for making those assumptions?
-
+- Input with always be a numerical value
 
 ## What are your initial thoughts about this problem? (high level design, 2-3 sentences)
 
+Break out into several steps:
+- Initial number reverse 
+- Sum numbers, ensure sum > 1000
+- Check sum, if palindrome push origin num to acc array
+- Check length of acc array, return if length == 25
 
 ## How would you identify the elements of this problem?
 
@@ -35,15 +30,29 @@ Limit your online searches to core language documentation only.
 - [ ] Sorting of Data
 - [ ] Pattern Recognition
 - [ ] Build/Navigate a Grid
-- [ ] Math
-- [ ] Language API knowledge
+- [X] Math
+- [X] Language API knowledge
 - [ ] Optimization
 
 
 ## Which data structure(s) do you think you'll use? What pros/cons do you see with that choice?
-
+- Most likely a reduce(), starting with an initial empty array. then use array iterator methods split(), reverse(), join().
 
 ## Write out a few lines of initial pseudocode: (mid-level design, NOT REAL CODE)
+```JavaScript
+Have: No input
+Want: Output a array (length == 25) of numbers whos reversed sum is a palindrome
+
+Create seperate function used to reverse numbers, by calling str/arr methods:
+  parseInt(currentNum.split('').reverse().join(), 10)
+Declare array for collecting interesting numbers
+Declare currentNum variable, starting at 0
+Declare reverseNum by calling reversing function for currentNum
+Declare sum variable as currentNum + reverseNum, 
+If the sum <= 1000 then return and increment currentNum by 1. 
+If sum === reversed sum using the reversing function, 
+  push the number into array of interesting numbers
+```
 
 ## Write out any implementation code OR link to repl
 
