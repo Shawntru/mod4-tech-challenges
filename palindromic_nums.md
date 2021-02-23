@@ -48,6 +48,7 @@ Create seperate function used to reverse numbers, by calling str/arr methods:
   parseInt(currentNum.split('').reverse().join(), 10)
 Declare array for collecting interesting numbers
 Declare currentNum variable, starting at 0
+Inside a while loop, while interesting numbers arr length is !== 25:
 Declare reverseNum by calling reversing function for currentNum
 Declare sum variable as currentNum + reverseNum, 
 If the sum <= 1000 then return and increment currentNum by 1. 
@@ -57,5 +58,25 @@ If sum === reversed sum using the reversing function,
 ```
 
 ## Write out any implementation code OR link to repl
+```JavaScript
+const findPalindromes = () => {
+  let interestingNums = [];
+  let currentNum = 0;
 
+  const reverse = (number) => {
+    return parseInt(number.toString().split('').reverse().join(''), 10);
+  }
+
+  while (interestingNums.length !== 25) {
+    let sum = currentNum + reverse(currentNum);
+    if (sum === reverse(sum) && sum >= 1000) {
+      interestingNums.push(currentNum)
+    }
+    currentNum++;
+  }
+
+  return interestingNums;
+}
+```
+[Repl.it Link](https://repl.it/@bearishparrot/AverageLovingOpen64#index.js)
 ## What is the Big O complexity of your solution?
