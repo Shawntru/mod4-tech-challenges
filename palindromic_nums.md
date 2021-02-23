@@ -36,6 +36,7 @@ Break out into several steps:
 
 
 ## Which data structure(s) do you think you'll use? What pros/cons do you see with that choice?
+
 - Most likely a reduce(), starting with an initial empty array. then use array iterator methods split(), reverse(), join().
 
 ## Write out a few lines of initial pseudocode: (mid-level design, NOT REAL CODE)
