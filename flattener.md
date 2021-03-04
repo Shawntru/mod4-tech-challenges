@@ -37,7 +37,7 @@ In JS:
 
 ## How would you identify the elements of this problem?
 
-- [ ] Searching of Data
+- [x] Searching of Data
 - [ ] Sorting of Data
 - [ ] Pattern Recognition
 - [ ] Build/Navigate a Grid
@@ -47,7 +47,7 @@ In JS:
 
 
 ## Which data structure(s) do you think you'll use? What pros/cons do you see with that choice?
-
+- Recursion
 
 ## Write out a few lines of initial pseudocode: (mid-level design, NOT REAL CODE)
 
