@@ -9,14 +9,7 @@ Imagine you have a deeply nested array, or multi-dimensional array, like this:
 ```
 the contents of the array aren't important.
 
-In Ruby and JS, we have built in methods and functions to `flatten` arrays into one dimension.  For example, in Ruby:
-
-```rb
-=> [1, 2, 3, [[4], 5], [[[6]]]]
-[8] pry(main)> array_of_ints.flatten
-=> [1, 2, 3, 4, 5, 6]
-```
-and in JS:
+In Ruby and JS, we have built in methods and functions to `flatten` arrays into one dimension.  For example, in JS:
 
 ```js
 > arr1
@@ -26,13 +19,7 @@ and in JS:
 ```
 If we look at the docs for either of these, we notice that they are _recursive_ by nature. Your goal is to recreate this functionality by writing a recursive function to accomplish this same thing. For example:
 
-```rb
- array_of_ints = [1, 2, 3, [[4], 5], [[[6]]]]
-=> [1, 2, 3, [[4], 5], [[[6]]]]
-ruby_flattener(array_of_ints)
-=> [1, 2, 3, 4, 5, 6]
-```
-or in JS:
+In JS:
 
 ```js
 > arr1
@@ -41,21 +28,12 @@ or in JS:
   [ 0, 1, 2, 3, 4 ]
 ```
 
-# Instructions
-
-1. Copy this markdown and paste in your own, privte gist
-2. In your private gist, fill out the questions below
-4. Submit by the due time as instructed in Zoom
-
-
-## Rewrite the question in your own words:
-
-
 ## What assumptions will you make about this problem if you cannot ask any more clarifying questions? What are your reasons for making those assumptions?
-
+- Array elements will always be integers (although this shouldn't affect the solution if they are not)
+- These will always be arrays, nested or otherwise
 
 ## What are your initial thoughts about this problem? (high level design, 2-3 sentences)
-
+- Using recursion, continuously cycle through the array, removing elements one at a time and pushing them into an accumulator array.
 
 ## How would you identify the elements of this problem?
 
